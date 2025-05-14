@@ -1,0 +1,83 @@
+﻿<Page x:Class="FussballApp.LigenPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FussballApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="800" Background="White"
+      Title="LigenPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+       
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Ligen" Foreground="Black" FontSize="20"  HorizontalAlignment="Left"/>
+            </StackPanel>
+
+
+            <!-- Statistiken -->
+            <StackPanel Grid.Column="0" Margin="0,25,0,0">
+                <ComboBox x:Name="LeagueComboBox"
+                  Width="150"
+                  Margin="0,0,0,10"
+                  SelectionChanged="LeagueComboBox_SelectionChanged"/>
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Spieler"  Width="200" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Tore"      HorizontalAlignment="Right"/>
+                </StackPanel>
+
+                <ItemsControl x:Name="StatsList">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Player}" Width="120"/>
+                                <TextBlock Text="{Binding Goals}" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <!-- Tabelle -->
+            <DataGrid x:Name="TableGrid"
+                Grid.Column="1"
+                AutoGenerateColumns="False"
+                CanUserAddRows="False"
+                IsReadOnly="True"
+                RowBackground="White"
+                AlternatingRowBackground="#F5F5F5"
+                GridLinesVisibility="None">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Pos." Binding="{Binding Position}" Width="40"/>
+                    <DataGridTextColumn Header="Team" Binding="{Binding Team}"     Width="*"/>
+                    <DataGridTextColumn Header="Sp."  Binding="{Binding Played}"   Width="40"/>
+                    <DataGridTextColumn Header="S"    Binding="{Binding Won}"      Width="30"/>
+                    <DataGridTextColumn Header="U"    Binding="{Binding Draw}"     Width="30"/>
+                    <DataGridTextColumn Header="N"    Binding="{Binding Lost}"     Width="30"/>
+                    <DataGridTextColumn Header="Pkt"  Binding="{Binding Points}"   Width="40"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+        
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
+            <Button Content="🏠 Home"   Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="ShowHome"/>
+            <Button Content="📊 Ligen"  Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="ShowLeagues"/>
+            <Button Content="👤 Profil" Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="ShowProfile"/>
+        </StackPanel>
+    </Grid>
+</Page>
