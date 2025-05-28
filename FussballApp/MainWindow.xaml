@@ -5,46 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FussballApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800" Background="#212121 ">
+        Title="MainWindow" Height="500" Width="800" Background="#212121 "
+        WindowState="Maximized"
+        WindowStyle="None"
+        ResizeMode="NoResize">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button x:Name="BtnGestern" Content="Gestern" Width="100" Margin="4" Click="TopNav_Click" Background="#4CAF50   "/>
-            <Button x:Name="BtnHeute" Content="Heute" Width="100" Margin="4" Click="TopNav_Click" Background="#4CAF50"/>
-            <Button x:Name="BtnMorgen" Content="Morgen" Width="100" Margin="4" Click="TopNav_Click" Background="#4CAF50"/>
-            <Button x:Name="BtnKalender" Content="📅 Kalender" Width="100" Margin="4" Click="TopNav_Click" Background="#4CAF50"/>
+            <Button x:Name="BtnGestern" Content="Gestern" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
+            <Button x:Name="BtnHeute" Content="Heute" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
+            <Button x:Name="BtnMorgen" Content="Morgen" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
+            <Button x:Name="BtnKalender" Content="📅 Kalender" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Text="Home" Foreground="White" FontSize="20"  HorizontalAlignment="Left"/>
+            <TextBlock Text="Home" Margin="5" Foreground="White" FontSize="20"  HorizontalAlignment="Left"/>
         </StackPanel>
 
         <ContentControl x:Name="ContentRegion" Grid.Row="1" />
 
+
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button Content="🏠 Home" Width="80" Margin="20" Padding="5" Click="ShowHome" Background="#F5F5F5"/>
-            <Button Content="📊 Ligen" Width="80" Margin="20"  Padding="5" Click="ShowLeagues" Background="#F5F5F5"/>
-            <Button Content="👤 Profil" Width="80" Margin="20" Padding="5" Click="ShowProfile" Background="#F5F5F5"/>
+            <Button Content="🏠 Home" Width="100" Margin="20" Padding="5" Click="ShowHome" Background="White"/>
+            <Button Content="📊 Ligen" Width="100" Margin="20"  Padding="5" Click="ShowLeagues" Background="White"/>
+            <Button Content="👤 Profil" Width="100" Margin="20" Padding="5" Click="ShowProfile" Background="White"/>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
         </StackPanel>
-        <DataGrid x:Name="MatchesGrid"
-                  AutoGenerateColumns="False"
-                  CanUserAddRows="False"
-                  IsReadOnly="True"
-                  HeadersVisibility="Column"
-                  Grid.Row="1"
-                  Height="50"
-                  Margin="150">
+        <DataGrid x:Name="MatchesGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="Column"
+                  Grid.Row="1" Height="50" Width="300" Margin="10" HorizontalAlignment="Left" SelectionChanged="MatchesGrid_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Heim" Width="*" Binding="{Binding HomeTeam}"/>
-                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam}" Width="*"/>
-                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score}"    Width="80"/>
-                <DataGridTextColumn Header="Min."      Binding="{Binding Minute}"   Width="50"/>
+                <DataGridTextColumn Header="Heim" Width="100" Binding="{Binding HomeTeam}"/>
+                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam}" Width="100"/>
+                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score}"    Width="60"/>
+                <DataGridTextColumn Header="Min."      Binding="{Binding Minute}"   Width="40"/>
             </DataGrid.Columns>
         </DataGrid>
-        
-        
+
+
+
+
     </Grid>
+
 </Window>
