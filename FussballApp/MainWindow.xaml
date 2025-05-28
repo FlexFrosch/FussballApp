@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FussballApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800" Background="#212121 ">
+        Title="MainWindow" Height="500" Width="800" Background="#212121 " Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -25,9 +25,9 @@
         <ContentControl x:Name="ContentRegion" Grid.Row="1" />
 
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button Content="🏠 Home" Width="80" Margin="20" Padding="5" Click="ShowHome" Background="#F5F5F5"/>
-            <Button Content="📊 Ligen" Width="80" Margin="20"  Padding="5" Click="ShowLeagues" Background="#F5F5F5"/>
-            <Button Content="👤 Profil" Width="80" Margin="20" Padding="5" Click="ShowProfile" Background="#F5F5F5"/>
+            <Button x:Name="HomeButton" Content="🏠 Home" Width="80" Margin="20" Padding="5" Click="HomeButton_Click" Background="#F5F5F5"/>
+            <Button x:Name="LigenButton" Content="📊 Ligen" Width="80" Margin="20"  Padding="5" Click="LigenButton_Click" Background="#F5F5F5"/>
+            <Button x:Name="ProfilButton" Content="👤 Profil" Width="80" Margin="20" Padding="5" Click="ProfilButton_Click" Background="#F5F5F5"/>
         </StackPanel>
         <DataGrid x:Name="MatchesGrid"
                   AutoGenerateColumns="False"

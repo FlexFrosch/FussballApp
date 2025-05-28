@@ -24,5 +24,25 @@ namespace FussballApp
         {
             InitializeComponent();
         }
+
+        private void ProfilButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LigenButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LeagueComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

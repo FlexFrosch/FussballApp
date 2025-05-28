@@ -18,12 +18,12 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button Content="🏠 Home"   Width="80" Margin="20" Padding="5"
-              Background="#F5F5F5" Click="ShowHome"/>
-            <Button Content="📊 Ligen"  Width="80" Margin="20" Padding="5"
-              Background="#F5F5F5" Click="ShowLeagues"/>
-            <Button Content="👤 Profil" Width="80" Margin="20" Padding="5"
-              Background="#F5F5F5" Click="ShowProfile"/>
+            <Button x:Name="HomeButton" Content="🏠 Home"   Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="HomeButton_Click"/>
+            <Button x:Name="LigenButton" Content="📊 Ligen"  Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="LigenButton_Click"/>
+            <Button x:Name="ProfileButton" Content="👤 Profil" Width="80" Margin="20" Padding="5"
+              Background="#F5F5F5" Click="ProfileButton_Click"/>
         </StackPanel>
     </Grid>
  
