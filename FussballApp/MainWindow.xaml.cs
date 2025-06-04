@@ -58,6 +58,31 @@ namespace FussballApp
         {
 
         }
+
+        private void TopNav_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void ProfilButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LigenButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            API_Reader.GetCompetitions();
+        }
     }
 
 }
