@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profileedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profileedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\fussballapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -27,10 +47,6 @@
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\ligenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,28 +55,12 @@
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:apiclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\jakob\\onedrive\\documents\\htl\\2024.2025\\pos\\c-sharp\\fussballapp\\fussballapp\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,56 +82,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T14:02:05.699Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Reader.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
-              "RelativeDocumentMoniker": "Reader.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
-              "RelativeToolTip": "Reader.cs",
-              "ViewState": "AgIAADIAAAAAMzMzMzMtwEMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T06:38:17.235Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ProfileEdit.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileEdit.xaml.cs",
               "RelativeDocumentMoniker": "ProfileEdit.xaml.cs",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileEdit.xaml.cs",
               "RelativeToolTip": "ProfileEdit.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAwBcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:16:06.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ProfileEdit.xaml",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileEdit.xaml",
               "RelativeDocumentMoniker": "ProfileEdit.xaml",
-              "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileEdit.xaml*",
-              "RelativeToolTip": "ProfileEdit.xaml*",
+              "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileEdit.xaml",
+              "RelativeToolTip": "ProfileEdit.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-06-06T09:12:48.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Profile.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\Profile.cs",
               "RelativeDocumentMoniker": "Profile.cs",
@@ -143,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\Player.cs",
               "RelativeDocumentMoniker": "Player.cs",
@@ -155,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "APIClasses.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\APIClasses.cs",
               "RelativeDocumentMoniker": "APIClasses.cs",
@@ -167,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "LigenWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\LigenWindow.xaml.cs",
               "RelativeDocumentMoniker": "LigenWindow.xaml.cs",
@@ -179,14 +155,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "LigenWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\LigenWindow.xaml",
               "RelativeDocumentMoniker": "LigenWindow.xaml",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\LigenWindow.xaml",
               "RelativeToolTip": "LigenWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T12:56:15.413Z"
+              "WhenOpened": "2025-05-28T12:56:15.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -196,14 +173,14 @@
               "RelativeDocumentMoniker": "ProfileWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileWindow.xaml.cs",
               "RelativeToolTip": "ProfileWindow.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAiwEEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAiwEEAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T12:55:16.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProfileWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\ProfileWindow.xaml",
               "RelativeDocumentMoniker": "ProfileWindow.xaml",
@@ -215,19 +192,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "Reader.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\Reader.cs",
               "RelativeDocumentMoniker": "Reader.cs",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\Reader.cs",
               "RelativeToolTip": "Reader.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAApwEMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:20.515Z"
+              "WhenOpened": "2025-05-27T06:12:20.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Team.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\Team.cs",
               "RelativeDocumentMoniker": "Team.cs",
@@ -235,7 +213,8 @@
               "RelativeToolTip": "Team.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:16.823Z"
+              "WhenOpened": "2025-05-27T06:12:16.823Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -251,19 +230,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 6,
               "Title": "League.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\League.cs",
               "RelativeDocumentMoniker": "League.cs",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\League.cs",
               "RelativeToolTip": "League.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:09.603Z"
+              "WhenOpened": "2025-05-27T06:12:09.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -275,28 +255,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "FussballApp.csproj",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\FussballApp.csproj",
               "RelativeDocumentMoniker": "FussballApp.csproj",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\FussballApp.csproj",
               "RelativeToolTip": "FussballApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-07T12:09:05.438Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\jakob\\OneDrive\\Documents\\HTL\\2024.2025\\Pos\\C-sharp\\FussballApp\\FussballApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAuwIoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAA+wIoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T13:59:53.107Z"
+              "WhenOpened": "2025-04-30T13:59:53.107Z",
+              "EditorCaption": ""
             }
           ]
         }

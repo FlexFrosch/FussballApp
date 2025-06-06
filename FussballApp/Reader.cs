@@ -76,11 +76,8 @@ namespace FussballApp
                 meinDataGrid.ItemsSource = gespielteSpiele.Matches;
             }
         }
-    }
 
-
-
-    public static async Task GetLeagues(string fileName)
+        public static async Task GetLeagues(string fileName)
         {
             try
             {
@@ -93,5 +90,6 @@ namespace FussballApp
                 Console.WriteLine($"Flascher Path");
             }
         }
+
     }
 }

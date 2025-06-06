@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace FussballApp
 {
@@ -19,19 +21,50 @@ namespace FussballApp
     /// </summary>
     public partial class ProfileEdit : Window
     {
+
+        private string datei = "Profil.txt";
+
         public ProfileEdit()
         {
             InitializeComponent();
+            LoadLigaTeam();
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
         {
-            this.Close();   
+            this.Close();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            string team = TeamHinzufuegen.Text;
+            string liga = (LigenComboBox.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "";
 
+            File.WriteAllLines(datei, new string[] { team, liga });
+
+        }
+
+        private void LoadLigaTeam()
+        {
+            if (File.Exists(datei))
+            {
+                string[] zeilen = File.ReadAllLines(datei);
+
+                if (zeilen.Length > 0)
+                    TeamHinzufuegen.Text = zeilen[0];
+
+                if (zeilen.Length > 1)
+                {
+                    foreach (ComboBoxItem item in LigenComboBox.Items)
+                    {
+                        if (item.Content.ToString() == zeilen[1])
+                        {
+                            LigenComboBox.SelectedItem = item;
+                            break;
+                        }
+                    }
+                }
+            }
         }
     }
 }
