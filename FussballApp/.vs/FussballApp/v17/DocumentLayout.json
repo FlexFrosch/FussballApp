@@ -77,6 +77,34 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
+              "RelativeDocumentMoniker": "Game.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
+              "RelativeToolTip": "Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:02:05.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Reader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
+              "RelativeDocumentMoniker": "Reader.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
+              "RelativeToolTip": "Reader.cs",
+              "ViewState": "AgIAADIAAAAAMzMzMzMtwEMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T06:38:17.235Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ProfileEdit.xaml.cs",
