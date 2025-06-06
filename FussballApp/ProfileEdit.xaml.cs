@@ -10,32 +10,26 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FussballApp
 {
     /// <summary>
-    /// Interaction logic for ProfilePage.xaml
+    /// Interaction logic for ProfileEdit.xaml
     /// </summary>
-    public partial class ProfilePage : Page
+    public partial class ProfileEdit : Window
     {
-        public ProfilePage()
+        public ProfileEdit()
         {
             InitializeComponent();
         }
 
-        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        private void Delete_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Close();   
         }
 
-        private void LigenButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        private void Save_Click(object sender, RoutedEventArgs e)
         {
 
         }

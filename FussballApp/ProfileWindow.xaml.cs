@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using FussballApp;
 
 namespace FussballApp
 {
@@ -22,7 +23,9 @@ namespace FussballApp
         public ProfileWindow()
         {
             InitializeComponent();
+           
         }
+
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
@@ -55,6 +58,12 @@ namespace FussballApp
         private void ShowProfile(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void ProfilEdit_Click(object sender, RoutedEventArgs e)
+        {
+            ProfileEdit window = new ProfileEdit();
+            window.Show();
         }
     }
 }

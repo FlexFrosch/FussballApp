@@ -20,6 +20,11 @@ namespace FussballApp
         public MainWindow()
         {
             InitializeComponent();
+            if (Darkemode.IsDarkMode)
+{
+    DarkMode_Click(null, null); // wendet Theme an
+}
+
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
@@ -83,6 +88,78 @@ namespace FussballApp
         {
             API_Reader.GetCompetitions();
         }
+
+        public static class Darkemode
+        {
+            public static bool IsDarkMode
+            {
+                get
+                {
+                    if (Application.Current.Properties.Contains("DarkModeEnabled"))
+                        return (bool)Application.Current.Properties["DarkModeEnabled"];
+                    return false; // 
+                }
+                set
+                {
+                    Application.Current.Properties["DarkModeEnabled"] = value;
+                }
+            }
+
+        }
+
+
+
+
+        public  void  DarkMode_Click(object sender, RoutedEventArgs e)
+        {
+            if (!Darkemode.IsDarkMode)
+            {
+                this.Background = Brushes.White;
+                DarkMode.Content = "🌙 Dark Mode";
+                DarkMode.Foreground = Brushes.White;
+                DarkMode.Background = new SolidColorBrush(Color.FromRgb(47, 79, 79));
+
+                var lightBg = Brushes.White;
+                var blackText = Brushes.Black;
+
+                HomeButton.Background = lightBg;
+                HomeButton.Foreground = blackText;
+
+                LeaguesButton.Background = lightBg;
+                LeaguesButton.Foreground = blackText;
+
+                ProfileButton.Background = lightBg;
+                ProfileButton.Foreground = blackText;
+
+                HomeText.Foreground = blackText;
+            }
+            else
+            {
+                this.Background = new SolidColorBrush(Color.FromRgb(30, 30, 30));
+                DarkMode.Content = "☀️ Light Mode";
+                DarkMode.Foreground = Brushes.White;
+                DarkMode.Background = new SolidColorBrush(Color.FromRgb(47, 79, 79));
+
+                var dark = new SolidColorBrush(Colors.DimGray);
+                var light = Brushes.White;
+
+                HomeButton.Background = dark;
+                HomeButton.Foreground = light;
+
+                LeaguesButton.Background = dark;
+                LeaguesButton.Foreground = light;
+
+                ProfileButton.Background = dark;
+                ProfileButton.Foreground = light;
+
+                HomeText.Foreground = light;
+            }
+
+            Darkemode.IsDarkMode = !Darkemode.IsDarkMode;
+        }
+
+
     }
+
 
 }

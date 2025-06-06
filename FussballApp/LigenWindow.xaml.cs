@@ -22,6 +22,7 @@ namespace FussballApp
         public LigenWindow()
         {
             InitializeComponent();
+
         }
 
         protected override void OnKeyDown(KeyEventArgs e)
