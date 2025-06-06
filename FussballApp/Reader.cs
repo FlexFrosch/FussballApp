@@ -12,6 +12,7 @@ namespace FussballApp
 {
     public class API_Reader
     {
+        public string test;
         private static readonly string apiKey = "f1e793d865804096a476f8052af2587f";
         private static readonly string apiUrl = "https://api.football-data.org/v4/competitions";
 
