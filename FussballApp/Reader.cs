@@ -65,17 +65,17 @@ namespace FussballApp
                 }
             }
         }
-        private async Task LadeSpiele(DataGrid dataGrid)
-        {
-            gespielteSpiele = await GetGames("2025-05-21", "2025-05-30");
+      ///  private async Task LadeSpiele(DataGrid dataGrid)
+        //{
+            //gespielteSpiele = await GetGames("2025-05-21", "2025-05-30");
 
-            if (gespielteSpiele != null)
-            {
-                Console.WriteLine($"Gefundene Spiele: {gespielteSpiele.Matches.Count}");
+          //  if (gespielteSpiele != null)
+          //  {
+        //        Console.WriteLine($"Gefundene Spiele: {gespielteSpiele.Matches.Count}");
                 // z. B. ins DataGrid laden:
-                meinDataGrid.ItemsSource = gespielteSpiele.Matches;
-            }
-        }
+      //          meinDataGrid.ItemsSource = gespielteSpiele.Matches;
+          //  }
+    //    }
 
         public static async Task GetLeagues(string fileName)
         {

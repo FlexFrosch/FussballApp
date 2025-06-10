@@ -39,6 +39,20 @@ namespace FussballApp
             base.OnKeyDown(e);
         }
 
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Right)
+            {
+                new LigenWindow().Show();
+                this.Close();
+            }
+            else if (e.Key == Key.Left)
+            {
+                new ProfileWindow().Show();
+                this.Close();
+            }
+        }
+
         private void ShowHome(object sender, RoutedEventArgs e)
         {
 
@@ -121,22 +135,30 @@ namespace FussballApp
                 DarkMode.Foreground = Brushes.White;
                 DarkMode.Background = new SolidColorBrush(Color.FromRgb(47, 79, 79));
 
-                var lightBg = Brushes.White;
-                var blackText = Brushes.Black;
+                var light = Brushes.White;
+                var dark = Brushes.Black;
 
-                HomeButton.Background = lightBg;
-                HomeButton.Foreground = blackText;
+                HomeButton.Background = light;
+                HomeButton.Foreground = dark;
+                
+                LeaguesButton.Background = light;
+                LeaguesButton.Foreground = dark;
 
-                LeaguesButton.Background = lightBg;
-                LeaguesButton.Foreground = blackText;
+                ProfileButton.Background = light;
+                ProfileButton.Foreground = dark;
 
-                ProfileButton.Background = lightBg;
-                ProfileButton.Foreground = blackText;
+                HomeText.Foreground = dark;
 
-                HomeText.Foreground = blackText;
+
+                MatchesGrid.Background = Brushes.LightGray;
+                MatchesGrid.Foreground = Brushes.Black;
+                MatchesGrid.BorderBrush = Brushes.LightGray;
+                MatchesGrid.RowBackground = Brushes.WhiteSmoke;
+                MatchesGrid.AlternatingRowBackground = Brushes.White;
+
             }
             else
-            {
+            {   
                 this.Background = new SolidColorBrush(Color.FromRgb(30, 30, 30));
                 DarkMode.Content = "☀️ Light Mode";
                 DarkMode.Foreground = Brushes.White;
@@ -155,6 +177,12 @@ namespace FussballApp
                 ProfileButton.Foreground = light;
 
                 HomeText.Foreground = light;
+
+                MatchesGrid.Background = Brushes.DimGray;
+                MatchesGrid.Foreground = Brushes.White;
+                MatchesGrid.BorderBrush = Brushes.LightSlateGray;
+                MatchesGrid.RowBackground = Brushes.Gray;
+                MatchesGrid.AlternatingRowBackground = Brushes.DarkGray;
             }
 
             Darkemode.IsDarkMode = !Darkemode.IsDarkMode;

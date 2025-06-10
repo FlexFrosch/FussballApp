@@ -42,6 +42,8 @@ namespace FussballApp
 
             File.WriteAllLines(datei, new string[] { team, liga });
 
+            this.Close();
+
         }
 
         private void LoadLigaTeam()

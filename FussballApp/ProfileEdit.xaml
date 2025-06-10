@@ -35,14 +35,14 @@
 
         <ComboBox x:Name="LigenComboBox" Grid.Row="2" Width="200" Height="30" Margin="10">
             <ComboBoxItem Content="Champions League" IsSelected="True" />
-            <ComboBoxItem Content="Primeira Liga" />
-            <ComboBoxItem Content="Premier League" />
-            <ComboBoxItem Content="Eredivisie" />
-            <ComboBoxItem Content="Bundesliga" />
-            <ComboBoxItem Content="Ligue 1" />
+            <ComboBoxItem Content="Primeira Liga (Portugal)" />
+            <ComboBoxItem Content="Premier League (England)" />
+            <ComboBoxItem Content="Eredivisie (Niederlande)" />
+            <ComboBoxItem Content="Bundesliga (Deutschland)" />
+            <ComboBoxItem Content="Ligue 1 (Frankreich)" />
             <ComboBoxItem Content="Serie A (Italien)" />
-            <ComboBoxItem Content="La Liga" />
-            <ComboBoxItem Content="Championship" />
+            <ComboBoxItem Content="La Liga (Spanien)" />
+            <ComboBoxItem Content="Championship (England 2Liga)" />
             <ComboBoxItem Content="Serie A (Brasilien)" />
             <ComboBoxItem Content="World Cup" />
             <ComboBoxItem Content="Euro 2024" />

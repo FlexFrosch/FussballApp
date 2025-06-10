@@ -8,7 +8,8 @@
         Title="MainWindow" Height="500" Width="800" Background="#212121 "
         WindowState="Maximized"
         WindowStyle="None"
-        ResizeMode="NoResize">
+        ResizeMode="NoResize"
+        KeyDown="Window_KeyDown">
 
     <Window.Resources>
         <Style x:Key="DataGridColumnHeaderStyle" TargetType="DataGridColumnHeader">
