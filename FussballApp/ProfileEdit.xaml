@@ -33,7 +33,20 @@
             <TextBlock Text="Ligen hinzufügen:" Margin="5" Foreground="Black" FontSize="20"  HorizontalAlignment="Left"/>
         </StackPanel>
 
-        <TextBox x:Name="LigenHinzufuegen" Grid.Row="2"  Height="30" Width="300" VerticalAlignment="Center" />
+        <ComboBox x:Name="LigenComboBox" Grid.Row="2" Width="200" Height="30" Margin="10">
+            <ComboBoxItem Content="Champions League" IsSelected="True" />
+            <ComboBoxItem Content="Primeira Liga (Portugal)" />
+            <ComboBoxItem Content="Premier League (England)" />
+            <ComboBoxItem Content="Eredivisie (Niederlande)" />
+            <ComboBoxItem Content="Bundesliga (Deutschland)" />
+            <ComboBoxItem Content="Ligue 1 (Frankreich)" />
+            <ComboBoxItem Content="Serie A (Italien)" />
+            <ComboBoxItem Content="La Liga (Spanien)" />
+            <ComboBoxItem Content="Championship (England 2Liga)" />
+            <ComboBoxItem Content="Serie A (Brasilien)" />
+            <ComboBoxItem Content="World Cup" />
+            <ComboBoxItem Content="Euro 2024" />
+        </ComboBox>
 
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" HorizontalAlignment="Right">

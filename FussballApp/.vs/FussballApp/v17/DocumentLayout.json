@@ -77,10 +77,6 @@
           "SelectedChildIndex": 12,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Reader.cs",
@@ -101,7 +97,7 @@
               "RelativeDocumentMoniker": "ProfileEdit.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileEdit.xaml.cs",
               "RelativeToolTip": "ProfileEdit.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:16:06.759Z",
               "EditorCaption": ""
@@ -165,7 +161,7 @@
               "RelativeDocumentMoniker": "LigenWindow.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\LigenWindow.xaml.cs",
               "RelativeToolTip": "LigenWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-28T12:57:46.638Z",
               "EditorCaption": ""
@@ -266,10 +262,9 @@
               "RelativeDocumentMoniker": "FussballApp.csproj",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\FussballApp.csproj",
               "RelativeToolTip": "FussballApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T12:09:05.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-07T12:09:05.438Z"
             },
             {
               "$type": "Document",

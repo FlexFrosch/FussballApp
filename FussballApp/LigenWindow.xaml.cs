@@ -37,6 +37,20 @@ namespace FussballApp
             base.OnKeyDown(e);
         }
 
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Right)
+            {
+                new ProfileWindow().Show();
+                this.Close();
+            }
+            else if (e.Key == Key.Left)
+            {
+                new MainWindow().Show();
+                this.Close();
+            }
+        }
         private void ShowHome(object sender, RoutedEventArgs e)
         {
             MainWindow window = new MainWindow();
