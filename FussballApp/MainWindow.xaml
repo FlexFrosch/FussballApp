@@ -9,6 +9,7 @@
         WindowState="Maximized"
         WindowStyle="None"
         ResizeMode="NoResize"
+        Loaded="Window_Loaded"
         KeyDown="Window_KeyDown">
 
     <Window.Resources>
@@ -46,8 +47,10 @@
                 <Button x:Name="ProfileButton" Content="👤 Profil" Width="100" Margin="20" Padding="5" Click="ShowProfile" Background="DimGray" />
             <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
         </StackPanel>
+        <Button x:Name="ReloadButton" Content="Reload" Grid.Row="1" Height="30" Width="100"
+                Margin="420, 150, 0, 10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Click="ReloadButton_Click"/>
         <DataGrid x:Name="MatchesGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="Column"
-                  Grid.Row="1" Height="50" Width="300" Margin="10" HorizontalAlignment="Left" SelectionChanged="MatchesGrid_SelectionChanged"
+                  Grid.Row="1"  MinHeight="50" Margin="10" HorizontalAlignment="Left" SelectionChanged="MatchesGrid_SelectionChanged"
                   Background="gray"
                   BorderBrush="White"
                   BorderThickness="1"
@@ -57,10 +60,10 @@
                   ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}">
 
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Heim" Width="100" Binding="{Binding HomeTeam}"/>
-                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam}" Width="100"/>
-                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score}"    Width="60"/>
-                <DataGridTextColumn Header="Min."      Binding="{Binding Minute}"   Width="40"/>
+                <DataGridTextColumn Header="Heim" Width="150" Binding="{Binding HomeTeam.Name}"/>
+                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam.Name}" Width="150"/>
+                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score.ScoreString}" Width="60"/>
+                <DataGridTextColumn Header="Min."      Binding="{Binding Status}" Width="40"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

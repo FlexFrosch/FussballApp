@@ -8,6 +8,8 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
 using System.IO;
+using System.Windows.Controls;
+using System.Windows;
 
 namespace FussballApp
 {
@@ -41,7 +43,7 @@ namespace FussballApp
                 }
             }
         }
-        public static async Task GetGames(string Date1, string Date2)
+        public static async Task GetGames(string Date1, string Date2, DataGrid dataGrid)
         {
             using (HttpClient client = new HttpClient())
             {
@@ -51,12 +53,23 @@ namespace FussballApp
 
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-21&dateTo=2025-05-30");
+                    HttpResponseMessage response = await client.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-23&dateTo=2025-05-27");
                     response.EnsureSuccessStatusCode();
 
                     string responseBody = await response.Content.ReadAsStringAsync();
 
                     var result = JsonConvert.DeserializeObject<MatchRoot>(responseBody);
+
+                    if (result != null)
+                    {
+                        foreach (Match match in result.Matches) 
+                        {
+                            match.Score.ScoreString = $"{match.Score.FullTime.Home.ToString()}:{match.Score.FullTime.Away.ToString()}";
+                            if (match.Status == "TIMED")
+                            { match.Status = $"FIN"; }
+                        }
+                        dataGrid.ItemsSource = result.Matches;
+                    }
                     // JSON parsen
                 }
                 catch (HttpRequestException e)
@@ -65,18 +78,17 @@ namespace FussballApp
                 }
             }
         }
-      ///  private async Task LadeSpiele(DataGrid dataGrid)
+        //private async Task LadeSpiele(DataGrid dataGrid)
         //{
-            //gespielteSpiele = await GetGames("2025-05-21", "2025-05-30");
+        //    gespielteSpiele = await GetGames("2025-05-21", "2025-05-30");
 
-          //  if (gespielteSpiele != null)
-          //  {
+        //    if (gespielteSpiele != null)
+        //    {
         //        Console.WriteLine($"Gefundene Spiele: {gespielteSpiele.Matches.Count}");
-                // z. B. ins DataGrid laden:
-      //          meinDataGrid.ItemsSource = gespielteSpiele.Matches;
-          //  }
-    //    }
-
+        //        // z. B. ins DataGrid laden:
+        //        meinDataGrid.ItemsSource = gespielteSpiele.Matches;
+        //    }
+        //}
         public static async Task GetLeagues(string fileName)
         {
             try

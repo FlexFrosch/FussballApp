@@ -100,9 +100,7 @@ namespace FussballApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            API_Reader.GetCompetitions();
-            API_Reader.GetGames("2025-05-21", "2025-05-30");
-            API_Reader.GetLeagues("BL1.json");
+            API_Reader.GetGames("a", "a", MatchesGrid);
         }
 
         public static class Darkemode
@@ -188,7 +186,10 @@ namespace FussballApp
             Darkemode.IsDarkMode = !Darkemode.IsDarkMode;
         }
 
-
+        private void ReloadButton_Click(object sender, RoutedEventArgs e)
+        {
+            API_Reader.GetGames("a", "a", MatchesGrid);
+        }
     }
 
 
