@@ -85,12 +85,16 @@ namespace FussballApp
         public int Id { get; set; }
         public string Name { get; set; }
     }
-
+    public class Time
+    {
+        public string Minutes = "90";
+    }
     public class Score
     {
         public string Winner { get; set; }
         public ScoreDetails FullTime { get; set; }
         public ScoreDetails HalfTime { get; set; }
+        public string ScoreString { get; set; }
     }
 
     public class ScoreDetails
