@@ -22,7 +22,7 @@ namespace FussballApp
             InitializeComponent();
             if (Darkemode.IsDarkMode)
 {
-    DarkMode_Click(null, null); // wendet Theme an
+            DarkMode_Click(null, null); 
 }
 
         }

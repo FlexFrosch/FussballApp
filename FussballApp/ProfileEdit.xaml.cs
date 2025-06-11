@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using FussballApp;
 
 
 namespace FussballApp
@@ -27,7 +29,8 @@ namespace FussballApp
         public ProfileEdit()
         {
             InitializeComponent();
-            LoadLigaTeam();
+            LoadProfile();
+          
         }
 
         private void Delete_Click(object sender, RoutedEventArgs e)
@@ -35,38 +38,54 @@ namespace FussballApp
             this.Close();
         }
 
-        private void Save_Click(object sender, RoutedEventArgs e)
+        public void Save_Click(object sender, RoutedEventArgs e)
         {
-            string team = TeamHinzufuegen.Text;
-            string liga = (LigenComboBox.SelectedItem as ComboBoxItem)?.Content.ToString() ?? "";
+            var profile = new Profile
+            {
+                Team = TeamHinzufuegen.Text,
+                Liga = (LigenComboBox.SelectedItem as ComboBoxItem)?.Content.ToString() ?? ""
+            };
 
-            File.WriteAllLines(datei, new string[] { team, liga });
+
+            File.WriteAllText(datei, profile.Serialize());
 
             this.Close();
 
         }
 
-        private void LoadLigaTeam()
+        private void LoadProfile()
         {
-            if (File.Exists(datei))
+            if (!File.Exists(datei))
+                return;
+
+            try
             {
-                string[] zeilen = File.ReadAllLines(datei);
+                string serialized = File.ReadAllText(datei);
+                var profile = Profile.Deserialize(serialized);
 
-                if (zeilen.Length > 0)
-                    TeamHinzufuegen.Text = zeilen[0];
-
-                if (zeilen.Length > 1)
+                TeamHinzufuegen.Text = profile.Team;
+                foreach (ComboBoxItem item in LigenComboBox.Items)
                 {
-                    foreach (ComboBoxItem item in LigenComboBox.Items)
+                    if (item.Content.ToString() == profile.Liga)
                     {
-                        if (item.Content.ToString() == zeilen[1])
-                        {
-                            LigenComboBox.SelectedItem = item;
-                            break;
-                        }
+                        LigenComboBox.SelectedItem = item;
+                        break;
                     }
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Fehler beim Laden des Profils:\n{ex.Message}",
+                    "Ladefehler",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error);
+            }
+        }
+
+        private void Upload_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

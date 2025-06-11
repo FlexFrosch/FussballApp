@@ -34,4 +34,28 @@ namespace FussballApp
     //        FavoriteTeams.Remove(team);
     //    }
     //}
-}
+
+    // Datei: Profile.cs
+ 
+        public class Profile
+        {
+            public string Team { get; set; }
+            public string Liga { get; set; }
+
+            public string Serialize() => $"{Team}:{Liga}";
+
+            public static Profile Deserialize(string serialized)
+            {
+                var parts = serialized.Split(':');
+                if (parts.Length < 2)
+                    throw new FormatException("Ungültiges Profil-Format");
+                return new Profile
+                {
+                    Team = parts[0],
+                    Liga = parts[1]
+                };
+            }
+        }
+    }
+
+
