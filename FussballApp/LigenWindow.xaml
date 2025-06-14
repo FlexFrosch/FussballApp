@@ -65,8 +65,8 @@
             GridLinesVisibility="None">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Pos." Binding="{Binding Position}" Width="40"/>
-                        <DataGridTextColumn Header="Team" Binding="{Binding Team}"     Width="*"/>
-                        <DataGridTextColumn Header="Sp."  Binding="{Binding Played}"   Width="40"/>
+                        <DataGridTextColumn Header="Team" Binding="{Binding Team.Name}"     Width="*"/>
+                        <DataGridTextColumn Header="Sp."  Binding="{Binding PlayedGames}"   Width="40"/>
                         <DataGridTextColumn Header="S"    Binding="{Binding Won}"      Width="30"/>
                         <DataGridTextColumn Header="U"    Binding="{Binding Draw}"     Width="30"/>
                         <DataGridTextColumn Header="N"    Binding="{Binding Lost}"     Width="30"/>

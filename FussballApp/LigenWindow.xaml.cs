@@ -61,7 +61,7 @@ namespace FussballApp
 
         private void ShowLeagues(object sender, RoutedEventArgs e)
         {
-
+            API_Reader.GetTable("PL", TableGrid);
         }
 
         private void ShowProfile(object sender, RoutedEventArgs e)
