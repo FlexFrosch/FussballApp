@@ -9,7 +9,7 @@
         WindowState="Maximized"
         WindowStyle="None"
         ResizeMode="NoResize"
-        KeyDown="Window_KeyDown">
+        KeyDown="Window_KeyDown" Loaded="Window_Loaded">
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -34,7 +34,18 @@
                     <ComboBox x:Name="LeagueComboBox"
               Width="150"
               Margin="0,0,0,10"
-              SelectionChanged="LeagueComboBox_SelectionChanged"/>
+              SelectionChanged="LeagueComboBox_SelectionChanged" SelectedIndex="0">
+                        <ComboBoxItem Content="Premier League" Tag="PL"/>
+                        <ComboBoxItem Content="Bundesliga" Tag="BL1"/>
+                        <ComboBoxItem Content="Campeonato Brasileiro Série A" Tag="BSA"/>
+                        <ComboBoxItem Content="Champions League" Tag="CL"/>
+                        <ComboBoxItem Content="Eredivisie" Tag="DED"/>
+                        <ComboBoxItem Content="Championship" Tag="ELC"/>
+                        <ComboBoxItem Content="Ligue 1" Tag="FL1"/>
+                        <ComboBoxItem Content="La Liga" Tag="PD"/>
+                        <ComboBoxItem Content="Liga Portugal" Tag="PPL"/>
+                        <ComboBoxItem Content="Serie A" Tag="SA"/>
+                    </ComboBox>
 
                     <StackPanel Orientation="Horizontal" Margin="5" >
                         <TextBlock Text="Spieler"  Width="200" HorizontalAlignment="Left"/>
