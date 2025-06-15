@@ -22,9 +22,9 @@ namespace FussballApp
         public LigenWindow()
         {
             InitializeComponent();
-
         }
 
+        string competition = "PL";
         protected override void OnKeyDown(KeyEventArgs e)
         {
             if (e.Key == Key.Escape)
@@ -61,7 +61,7 @@ namespace FussballApp
 
         private void ShowLeagues(object sender, RoutedEventArgs e)
         {
-
+            API_Reader.GetTable(competition, TableGrid);
         }
 
         private void ShowProfile(object sender, RoutedEventArgs e)
@@ -74,12 +74,22 @@ namespace FussballApp
 
         private void LeagueComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            // ChatGPT weil wusste nicht wie ich den Tag bekomme
+            if (LeagueComboBox.SelectedItem is ComboBoxItem selectedItem)
+            {
+                competition = selectedItem.Tag.ToString();
+            }
+            API_Reader.GetTable(competition, TableGrid);
         }
 
         private void TableGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
-    }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            API_Reader.GetTable(competition, TableGrid);
+        }
+}
 }

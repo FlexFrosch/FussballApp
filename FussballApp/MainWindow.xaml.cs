@@ -53,7 +53,6 @@ namespace FussballApp
 
         private void ShowHome(object sender, RoutedEventArgs e)
         {
-
         }
 
         private void ShowLeagues(object sender, RoutedEventArgs e)

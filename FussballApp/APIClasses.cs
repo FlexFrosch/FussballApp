@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace FussballApp
 {
- 
+    // Großteil von ChatGPT machen lassen da es nur abschreib Arbeit war
     public class RootObject
     {
         public int Count { get; set; }
@@ -27,6 +29,15 @@ namespace FussballApp
         public Competition Competition { get; set; }
         public Season Season { get; set; }
         public List<Team> Teams { get; set; }
+    }
+
+    public class StandingsRoot
+    {
+        public Filters Filters { get; set; }
+        public Area Area { get; set; }
+        public Competition Competition { get; set; }
+        public Season Season { get; set; }
+        public List<Standing> Standings { get; set; }
     }
 
     public class Filters
@@ -62,7 +73,7 @@ namespace FussballApp
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int CurrentMatchday { get; set; }
-        public object Winner { get; set; } // kann auch null sein oder eine Klasse, wenn mehr Infos gebraucht werden
+        public object Winner { get; set; }
     }
 
     public class Match
@@ -84,10 +95,13 @@ namespace FussballApp
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string ShortName { get; set; }
+        public string Tla { get; set; }
+        public string Crest { get; set; }
     }
     public class Time
     {
-        public string Minutes = "90";
+        public string Minutes { get; set; }
     }
     public class Score
     {
@@ -101,5 +115,26 @@ namespace FussballApp
     {
         public int? Home { get; set; }
         public int? Away { get; set; }
+    }
+    public class Standing
+    {
+        public string Stage { get; set; }
+        public string Type { get; set; }
+        public object Group { get; set; }
+        public List<TableItem> Table { get; set; }
+    }
+    public class TableItem
+    {
+        public int Position { get; set; }
+        public Team Team { get; set; }
+        public int PlayedGames { get; set; }
+        public string Form { get; set; }
+        public int Won { get; set; }
+        public int Draw { get; set; }
+        public int Lost { get; set; }
+        public int Points { get; set; }
+        public int GoalsFor { get; set; }
+        public int GoalsAgainst { get; set; }
+        public int GoalDifference { get; set; }
     }
 }

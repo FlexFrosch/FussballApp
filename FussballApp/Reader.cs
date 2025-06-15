@@ -10,6 +10,7 @@ using Newtonsoft.Json;
 using System.IO;
 using System.Windows.Controls;
 using System.Windows;
+using System.Windows.Data;
 
 namespace FussballApp
 {
@@ -19,6 +20,7 @@ namespace FussballApp
         private static readonly string apiKey = "f1e793d865804096a476f8052af2587f";
         private static readonly string apiUrl = "https://api.football-data.org/v4/competitions";
 
+        // Chat GPT Anfang
         public static async Task GetCompetitions()
         {
             using (HttpClient client = new HttpClient())
@@ -43,6 +45,7 @@ namespace FussballApp
                 }
             }
         }
+        // Chat GPT Ende
         public static async Task GetGames(string Date1, string Date2, DataGrid dataGrid)
         {
             using (HttpClient client = new HttpClient())
@@ -67,6 +70,10 @@ namespace FussballApp
                             match.Score.ScoreString = $"{match.Score.FullTime.Home.ToString()}:{match.Score.FullTime.Away.ToString()}";
                             if (match.Status == "TIMED")
                             { match.Status = $"FIN"; }
+                            else if(match.Status == "SCHEDULED")
+                            { match.Status = $"NP"; }
+                            else
+                            { match.Status = "ONG"; }
                         }
                         dataGrid.ItemsSource = result.Matches;
                     }
@@ -93,15 +100,45 @@ namespace FussballApp
         {
             try
             {
-                string fullPath = Path.Combine("LeagueFolder//", fileName);
+                string fullPath = Path.Combine(Directory.GetCurrentDirectory(), "LeagueFolder", fileName);
                 string text = await File.ReadAllTextAsync(fullPath);
                 var result = JsonConvert.DeserializeObject<CompetitionTeamsRoot>(text);
             }
             catch
             {
-                Console.WriteLine($"Flascher Path");
+                Console.WriteLine($"Falscher Path");
             }
         }
+        public static async Task GetTable(string Competetion, DataGrid dataGrid)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                // Auth-Header setzen
+                client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                try
+                {
+                    string fullPath = $"https://api.football-data.org/v4/competitions/{Competetion}/standings";
+                    HttpResponseMessage response = await client.GetAsync(fullPath);
+                    response.EnsureSuccessStatusCode();
+
+                    string responseBody = await response.Content.ReadAsStringAsync();
+
+                    var result = JsonConvert.DeserializeObject<StandingsRoot>(responseBody);
+                    if (result != null)
+                    {
+                        dataGrid.ItemsSource = result.Standings[0].Table;
+                    }
+                    // JSON parsen
+                }
+                catch (HttpRequestException e)
+                {
+                    Console.WriteLine($"Fehler: {e.Message}");
+                }
+            }
+        }
+        //  https://api.football-data.org/v4/competitions/PL/standings
 
     }
 }
