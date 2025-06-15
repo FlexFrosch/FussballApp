@@ -3,68 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\apiclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:apiclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:league.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\fussballapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:fussballapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profilewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:team.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profileedit.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\profileedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profileedit.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profilewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\ligenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:ligenwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|c:\\users\\user\\documents\\schule\\2ahif\\pos\\github\\fussballapp\\fussballapp\\apiclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4D255A6-CBF6-4220-A65C-A19AE7D6C25F}|FussballApp.csproj|solutionrelative:apiclasses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,151 +34,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Reader.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
-              "RelativeDocumentMoniker": "Reader.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
-              "RelativeToolTip": "Reader.cs",
-              "ViewState": "AgIAADcAAADAzMzMzMwYwEUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:20.515Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProfileEdit.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileEdit.xaml.cs",
-              "RelativeDocumentMoniker": "ProfileEdit.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileEdit.xaml.cs",
-              "RelativeToolTip": "ProfileEdit.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwEMAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:16:06.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProfileEdit.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileEdit.xaml",
-              "RelativeDocumentMoniker": "ProfileEdit.xaml",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileEdit.xaml",
-              "RelativeToolTip": "ProfileEdit.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-06T09:12:48.079Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Profile.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Profile.cs",
-              "RelativeDocumentMoniker": "Profile.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Profile.cs",
-              "RelativeToolTip": "Profile.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:01:31.855Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Player.cs",
-              "RelativeDocumentMoniker": "Player.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Player.cs",
-              "RelativeToolTip": "Player.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA4wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:01:30.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "APIClasses.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\APIClasses.cs",
-              "RelativeDocumentMoniker": "APIClasses.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\APIClasses.cs",
-              "RelativeToolTip": "APIClasses.cs",
-              "ViewState": "AgIAAFcAAAAAyMzMzMwMwF8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:01:27.599Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "LigenWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\LigenWindow.xaml.cs",
               "RelativeDocumentMoniker": "LigenWindow.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\LigenWindow.xaml.cs",
               "RelativeToolTip": "LigenWindow.xaml.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAUwC4AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAABAMzMzMzMpwFwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T12:57:46.638Z",
+              "WhenOpened": "2025-06-14T17:49:34.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "LigenWindow.xaml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\LigenWindow.xaml",
               "RelativeDocumentMoniker": "LigenWindow.xaml",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\LigenWindow.xaml",
               "RelativeToolTip": "LigenWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T12:56:15.413Z",
+              "WhenOpened": "2025-06-14T19:08:21.377Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProfileWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ProfileWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileWindow.xaml.cs",
-              "RelativeToolTip": "ProfileWindow.xaml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA4wEEAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Reader.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
+              "RelativeDocumentMoniker": "Reader.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Reader.cs",
+              "RelativeToolTip": "Reader.cs",
+              "ViewState": "AgIAAI4AAABAMzMzMzMnwHYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T12:55:16.372Z",
+              "WhenOpened": "2025-05-27T06:12:20.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProfileWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileWindow.xaml",
-              "RelativeDocumentMoniker": "ProfileWindow.xaml",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\ProfileWindow.xaml",
-              "RelativeToolTip": "ProfileWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-28T12:54:58.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Team.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Team.cs",
-              "RelativeDocumentMoniker": "Team.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Team.cs",
-              "RelativeToolTip": "Team.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "APIClasses.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\APIClasses.cs",
+              "RelativeDocumentMoniker": "APIClasses.cs",
+              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\APIClasses.cs",
+              "RelativeToolTip": "APIClasses.cs",
+              "ViewState": "AgIAAHoAAAAAl5mZmZkVwGIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:16.823Z",
+              "WhenOpened": "2025-05-28T14:01:27.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -230,51 +105,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
-              "RelativeDocumentMoniker": "Game.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\Game.cs",
-              "RelativeToolTip": "Game.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:13.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "League.cs",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\League.cs",
-              "RelativeDocumentMoniker": "League.cs",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\League.cs",
-              "RelativeToolTip": "League.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-27T06:12:09.603Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FussballApp.csproj",
-              "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\FussballApp.csproj",
-              "RelativeDocumentMoniker": "FussballApp.csproj",
-              "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\FussballApp.csproj",
-              "RelativeToolTip": "FussballApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-07T12:09:05.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\User\\Documents\\Schule\\2AHIF\\POS\\GitHub\\FussballApp\\FussballApp\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAEwAAABgZmZmZmY3wDkAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAzMzMzMwEwCkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-30T13:59:53.107Z",
               "EditorCaption": ""
