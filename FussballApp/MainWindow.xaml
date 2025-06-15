@@ -34,7 +34,6 @@
             <Button x:Name="BtnKalender" Content="📅 Kalender" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
         </StackPanel>
 
-        <Button x:Name="DarkMode" Content="☀️ Light Mode" Width="100" Height="25" Margin="4" HorizontalAlignment="Right" Foreground="White" BorderBrush="White" Background="DarkSlateGray" Click="DarkMode_Click"/>
 
         <StackPanel Orientation="Horizontal">
             <TextBlock x:Name="HomeText" Text="Home" Margin="5" Foreground="White" FontSize="20"  HorizontalAlignment="Left"/>

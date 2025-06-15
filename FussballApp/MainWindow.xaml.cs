@@ -20,12 +20,10 @@ namespace FussballApp
         public MainWindow()
         {
             InitializeComponent();
-            if (Darkemode.IsDarkMode)
-{
-            DarkMode_Click(null, null); 
-}
-
         }
+
+
+      
 
         protected override void OnKeyDown(KeyEventArgs e)
         {
@@ -103,88 +101,7 @@ namespace FussballApp
             API_Reader.GetGames("a", "a", MatchesGrid);
         }
 
-        public static class Darkemode
-        {
-            public static bool IsDarkMode
-            {
-                get
-                {
-                    if (Application.Current.Properties.Contains("DarkModeEnabled"))
-                        return (bool)Application.Current.Properties["DarkModeEnabled"];
-                    return false; // 
-                }
-                set
-                {
-                    Application.Current.Properties["DarkModeEnabled"] = value;
-                }
-            }
-
-        }
-
-
-
-
-        public  void  DarkMode_Click(object sender, RoutedEventArgs e)
-        {
-            if (!Darkemode.IsDarkMode)
-            {
-                this.Background = Brushes.White;
-                DarkMode.Content = "🌙 Dark Mode";
-                DarkMode.Foreground = Brushes.White;
-                DarkMode.Background = new SolidColorBrush(Color.FromRgb(47, 79, 79));
-
-                var light = Brushes.White;
-                var dark = Brushes.Black;
-
-                HomeButton.Background = light;
-                HomeButton.Foreground = dark;
-                
-                LeaguesButton.Background = light;
-                LeaguesButton.Foreground = dark;
-
-                ProfileButton.Background = light;
-                ProfileButton.Foreground = dark;
-
-                HomeText.Foreground = dark;
-
-
-                MatchesGrid.Background = Brushes.LightGray;
-                MatchesGrid.Foreground = Brushes.Black;
-                MatchesGrid.BorderBrush = Brushes.LightGray;
-                MatchesGrid.RowBackground = Brushes.WhiteSmoke;
-                MatchesGrid.AlternatingRowBackground = Brushes.White;
-
-            }
-            else
-            {   
-                this.Background = new SolidColorBrush(Color.FromRgb(30, 30, 30));
-                DarkMode.Content = "☀️ Light Mode";
-                DarkMode.Foreground = Brushes.White;
-                DarkMode.Background = new SolidColorBrush(Color.FromRgb(47, 79, 79));
-
-                var dark = new SolidColorBrush(Colors.DimGray);
-                var light = Brushes.White;
-
-                HomeButton.Background = dark;
-                HomeButton.Foreground = light;
-
-                LeaguesButton.Background = dark;
-                LeaguesButton.Foreground = light;
-
-                ProfileButton.Background = dark;
-                ProfileButton.Foreground = light;
-
-                HomeText.Foreground = light;
-
-                MatchesGrid.Background = Brushes.DimGray;
-                MatchesGrid.Foreground = Brushes.White;
-                MatchesGrid.BorderBrush = Brushes.LightSlateGray;
-                MatchesGrid.RowBackground = Brushes.Gray;
-                MatchesGrid.AlternatingRowBackground = Brushes.DarkGray;
-            }
-
-            Darkemode.IsDarkMode = !Darkemode.IsDarkMode;
-        }
+       
 
         private void ReloadButton_Click(object sender, RoutedEventArgs e)
         {

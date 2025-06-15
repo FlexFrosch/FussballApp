@@ -1,42 +1,77 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-using FussballApp;
 
 namespace FussballApp
 {
-    /// <summary>
-    /// Interaction logic for ProfileWindow.xaml
-    /// </summary>
     public partial class ProfileWindow : Window
     {
+        private const string FileName = "profiles.json";
+
+        // bindable Collection aller Profile
+        public ObservableCollection<Profile> Profiles { get; }
+            = new ObservableCollection<Profile>();
+
         public ProfileWindow()
         {
             InitializeComponent();
-           
+            DataContext = this;
+            LoadProfiles();
         }
 
-
-        protected override void OnKeyDown(KeyEventArgs e)
+        private void ProfilEdit_Click(object sender, RoutedEventArgs e)
         {
-            if (e.Key == Key.Escape)
+            var dlg = new ProfileEdit();
+            bool? saved = dlg.ShowDialog();
+            if (saved == true)
             {
-                this.WindowStyle = WindowStyle.SingleBorderWindow;
-                this.ResizeMode = ResizeMode.CanResize;
-                this.WindowState = WindowState.Normal;
+                Profiles.Add(new Profile
+                {
+                    Team = dlg.TeamName,
+                    Liga = dlg.LigaName
+                });
+                SaveProfiles();
             }
+        }
 
-            base.OnKeyDown(e);
+        private void RemoveTeam_Click(object sender, RoutedEventArgs e)
+        {
+            if (TeamsListView.SelectedItem is Profile p)
+            {
+                Profiles.Remove(p);
+                SaveProfiles();
+            }
+        }
+
+        private void RemoveLiga_Click(object sender, RoutedEventArgs e)
+        {
+            if (LigenListView.SelectedItem is Profile p)
+            {
+                Profiles.Remove(p);
+                SaveProfiles();
+            }
+        }
+
+        private void ShowHome(object sender, RoutedEventArgs e)
+        {
+            new MainWindow().Show();
+            Close();
+        }
+
+        private void ShowLeagues(object sender, RoutedEventArgs e)
+        {
+            new LigenWindow().Show();
+            Close();
+        }
+
+        private void ShowProfile(object sender, RoutedEventArgs e)
+        {
         }
 
         public void Window_KeyDown(object sender, KeyEventArgs e)
@@ -44,40 +79,56 @@ namespace FussballApp
             if (e.Key == Key.Right)
             {
                 new MainWindow().Show();
-                this.Close();
+                Close();
             }
             else if (e.Key == Key.Left)
             {
                 new LigenWindow().Show();
-                this.Close();
+                Close();
             }
         }
 
-        private void ShowHome(object sender, RoutedEventArgs e)
+        protected override void OnKeyDown(KeyEventArgs e)
         {
-            MainWindow window = new MainWindow();
-            window.Show();
-            this.Close();
-
+            if (e.Key == Key.Escape)
+            {
+                WindowStyle = WindowStyle.SingleBorderWindow;
+                ResizeMode = ResizeMode.CanResize;
+                WindowState = WindowState.Normal;
+            }
+            base.OnKeyDown(e);
         }
 
-        private void ShowLeagues(object sender, RoutedEventArgs e)
+        private void LoadProfiles()
         {
-            LigenWindow window = new LigenWindow();
-            window.Show();
-            this.Close();
+            if (!File.Exists(FileName)) return;
 
+            try
+            {
+                string json = File.ReadAllText(FileName);
+                var list = JsonSerializer.Deserialize<List<Profile>>(json);
+                if (list != null)
+                    foreach (var p in list)
+                        Profiles.Add(p);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Laden:");
+            }
         }
 
-        private void ShowProfile(object sender, RoutedEventArgs e)
+        private void SaveProfiles()
         {
-
-        }
-
-        private void ProfilEdit_Click(object sender, RoutedEventArgs e)
-        {
-            ProfileEdit window = new ProfileEdit();
-            window.Show();
+            try
+            {
+                var list = Profiles.ToList();
+                string json = JsonSerializer.Serialize(list);
+                File.WriteAllText(FileName, json);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Fehler beim Speichern:");
+            }
         }
     }
 }
