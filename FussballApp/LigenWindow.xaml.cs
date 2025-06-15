@@ -80,6 +80,7 @@ namespace FussballApp
                 competition = selectedItem.Tag.ToString();
             }
             API_Reader.GetTable(competition, TableGrid);
+            API_Reader.GetTopScorers(competition, ScorerGrid);
         }
 
         private void TableGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -90,6 +91,7 @@ namespace FussballApp
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             API_Reader.GetTable(competition, TableGrid);
+            API_Reader.GetTopScorers(competition, ScorerGrid);
         }
 }
 }

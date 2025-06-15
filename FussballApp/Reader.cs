@@ -137,8 +137,34 @@ namespace FussballApp
                     Console.WriteLine($"Fehler: {e.Message}");
                 }
             }
-        }
-        //  https://api.football-data.org/v4/competitions/PL/standings
+        }public static async Task GetTopScorers(string Competetion, DataGrid dataGrid)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                // Auth-Header setzen
+                client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
+                try
+                {
+                    string fullPath = $"https://api.football-data.org/v4/competitions/{Competetion}/scorers";
+                    HttpResponseMessage response = await client.GetAsync(fullPath);
+                    response.EnsureSuccessStatusCode();
+
+                    string responseBody = await response.Content.ReadAsStringAsync();
+
+                    var result = JsonConvert.DeserializeObject<TopScorersRoot>(responseBody);
+                    if (result != null)
+                    {
+                        dataGrid.ItemsSource = result.Scorers;
+                    }
+                    // JSON parsen
+                }
+                catch (HttpRequestException e)
+                {
+                    Console.WriteLine($"Fehler: {e.Message}");
+                }
+            }
+        }
     }
 }
