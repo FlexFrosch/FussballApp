@@ -16,6 +16,9 @@ namespace FussballApp
 {
     public class API_Reader
     {
+
+        // Scores werden nicht angezeigt da API es nicht rausgibt in C#. Ich finde den Fehler nicht
+
         public MatchRoot game;
         private static readonly string apiKey = "f1e793d865804096a476f8052af2587f";
         private static readonly string apiUrl = "https://api.football-data.org/v4/competitions";
@@ -46,8 +49,17 @@ namespace FussballApp
             }
         }
         // Chat GPT Ende
-        public static async Task GetGames(string Date1, string Date2, DataGrid dataGrid)
+        public static async Task GetGames(int GesternEinsHeuteZweiMorgenDrei ,DataGrid dataGrid)
         {
+            string datum = DateTime.Today.ToString("yyyy-MM-dd");
+            if (GesternEinsHeuteZweiMorgenDrei == 1)
+            {
+                datum = DateTime.Today.AddDays(1).ToString("yyyy-MM-dd");
+            }
+            if (GesternEinsHeuteZweiMorgenDrei == 3)
+            {
+                datum = DateTime.Today.AddDays(-1).ToString("yyyy-MM-dd");
+            }
             using (HttpClient client = new HttpClient())
             {
                 // Auth-Header setzen
@@ -56,7 +68,7 @@ namespace FussballApp
 
                 try
                 {
-                    HttpResponseMessage response = await client.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-23&dateTo=2025-05-27");
+                    HttpResponseMessage response = await client.GetAsync($"https://api.football-data.org/v4/matches?dateFrom={datum}&dateTo={datum}");
                     response.EnsureSuccessStatusCode();
 
                     string responseBody = await response.Content.ReadAsStringAsync();
@@ -91,23 +103,50 @@ namespace FussballApp
             }
         }
 
-        public static async Task GetFavouriteGames(string Date1, string Date2, DataGrid dataGrid)
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                // Auth-Header setzen
-                client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                try
-                {
-                    for (int i = 0; i < 1;)
-                    {
-                        string text = File.ReadAllText("profiles.json");
-                        var list = JsonConvert.DeserializeObject<List<Profile>>(text);
-                        if (list != null)
-                            foreach (var p in list);
-                    }
+        // Konnten wir nicht machen da es zu anstrengend war für meinen Laptop weshalb ich glaube das es zu viel Leistung braucht es zu machen
+        // Deshalb nicht fertig implementiert da zu anstrengend für meine CPU.
+        // Ergibt vielleicht nicht alles Sinn da ich GetGames kopiert habe und abändern wollte damit es funktioniert
+
+
+        //public static async Task GetFavouriteGames(string Date1, string Date2, DataGrid dataGrid)
+        //{
+        //    using (HttpClient client = new HttpClient())
+        //    {
+        //        // Auth-Header setzen
+        //        client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
+        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+        //        try
+        //        {
+        //            for (int i = 0; i < 1;)
+        //            {
+        //                string text = File.ReadAllText("profiles.json");
+        //                var list = JsonConvert.DeserializeObject<List<Profile>>(text);
+        //                List<int> teams = new List<int>();
+        //                if (list != null)
+        //                {
+        //                    string fullPath = Path.Combine(Directory.GetCurrentDirectory(), "LeagueFolder", "alle.json");
+        //                    var allTeams = await File.ReadAllTextAsync(fullPath);
+        //                    List<UeberpruefungsRoot> alleTeams = JsonConvert.DeserializeObject<List<UeberpruefungsRoot>>(allTeams);
+        //                    int j = 0;
+        //                    foreach (var p in list)
+        //                    {
+        //                        foreach(var t in alleTeams)
+        //                        {
+        //                            if(p.Team == t.Name)
+        //                            {
+        //                                teams.Append(t.Id);
+        //                                j ++;
+        //                                if (j == 100)
+        //                                {
+        //                                    j = 0;
+        //                                }
+        //                            }
+        //                        }
+        //                    }
+        //                }
+        //            }
                     //HttpResponseMessage response = await client.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-23&dateTo=2025-05-27");
                     //response.EnsureSuccessStatusCode();
 
@@ -135,13 +174,18 @@ namespace FussballApp
                     //    dataGrid.ItemsSource = result.Matches;
                     //}
                     //// JSON parsen
-                }
-                catch (HttpRequestException e)
-                {
-                    Console.WriteLine($"Fehler: {e.Message}");
-                }
-            }
-        }
+        //        }
+        //        catch (HttpRequestException e)
+        //        {
+        //            Console.WriteLine($"Fehler: {e.Message}");
+        //        }
+        //    }
+        //}
+
+
+        // Unnötig könnte aber vielleicht noch gebraucht werden
+
+
         //private async Task LadeSpiele(DataGrid dataGrid)
         //{
         //    gespielteSpiele = await GetGames("2025-05-21", "2025-05-30");
