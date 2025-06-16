@@ -37,10 +37,23 @@
                     <ComboBoxItem Content="Serie A" Tag="SA"/>
                 </ComboBox>
 
-                <StackPanel Orientation="Horizontal" Margin="5">
-                    <TextBlock Text="Spieler" Width="200" Foreground="White"/>
-                    <TextBlock Text="Tore" Foreground="White"/>
-                </StackPanel>
+                <DataGrid x:Name="ScorerGrid"
+            Grid.Column="1"
+            AutoGenerateColumns="False"
+            CanUserAddRows="False"
+            IsReadOnly="True"
+            RowBackground="White"
+            AlternatingRowBackground="LightGray" 
+            Margin="5"
+            GridLinesVisibility="None"
+            Width="320" HorizontalAlignment="Left">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Spieler" Binding="{Binding Player.Name}" Width="150"/>
+                        <DataGridTextColumn Header="Matches" Binding="{Binding PlayedMatches}" Width="80"/>
+                        <DataGridTextColumn Header="Tore" Binding="{Binding Goals}" Width="40"/>
+                        <DataGridTextColumn Header="Assists" Binding="{Binding Assists}" Width="40"/>
+                    </DataGrid.Columns>
+                </DataGrid>
 
                 <ItemsControl x:Name="StatsList">
                     <ItemsControl.ItemTemplate>
