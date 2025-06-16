@@ -48,6 +48,12 @@ namespace FussballApp
         public List<Scorer> Scorers { get; set; }
     }
 
+    public class UeberpruefungsRoot
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string League { get; set; }
+    }
     public class Filters
     {
         public string Client { get; set; }

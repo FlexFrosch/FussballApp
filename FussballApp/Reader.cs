@@ -67,7 +67,12 @@ namespace FussballApp
                     {
                         foreach (Match match in result.Matches) 
                         {
-                            match.Score.ScoreString = $"{match.Score.FullTime.Home.ToString()}:{match.Score.FullTime.Away.ToString()}";
+                            if (match.Score.FullTime.Home != null && match.Score.FullTime.Away != null)
+                            { match.Score.ScoreString = $"{match.Score.FullTime.Home.ToString()}:{match.Score.FullTime.Away.ToString()}"; }
+                            else
+                            {
+                                match.Score.ScoreString = "N/A";
+                            }
                             if (match.Status == "TIMED")
                             { match.Status = $"FIN"; }
                             else if(match.Status == "SCHEDULED")
@@ -78,6 +83,58 @@ namespace FussballApp
                         dataGrid.ItemsSource = result.Matches;
                     }
                     // JSON parsen
+                }
+                catch (HttpRequestException e)
+                {
+                    Console.WriteLine($"Fehler: {e.Message}");
+                }
+            }
+        }
+
+        public static async Task GetFavouriteGames(string Date1, string Date2, DataGrid dataGrid)
+        {
+            using (HttpClient client = new HttpClient())
+            {
+                // Auth-Header setzen
+                client.DefaultRequestHeaders.Add("X-Auth-Token", apiKey);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                try
+                {
+                    for (int i = 0; i < 1;)
+                    {
+                        string text = File.ReadAllText("profiles.json");
+                        var list = JsonConvert.DeserializeObject<List<Profile>>(text);
+                        if (list != null)
+                            foreach (var p in list);
+                    }
+                    //HttpResponseMessage response = await client.GetAsync("https://api.football-data.org/v4/matches?dateFrom=2025-05-23&dateTo=2025-05-27");
+                    //response.EnsureSuccessStatusCode();
+
+                    //string responseBody = await response.Content.ReadAsStringAsync();
+
+                    //var result = JsonConvert.DeserializeObject<MatchRoot>(responseBody);
+
+                    //if (result != null)
+                    //{
+                    //    foreach (Match match in result.Matches)
+                    //    {
+                    //        if (match.Score.FullTime.Home != null && match.Score.FullTime.Away != null)
+                    //        { match.Score.ScoreString = $"{match.Score.FullTime.Home.ToString()}:{match.Score.FullTime.Away.ToString()}"; }
+                    //        else
+                    //        {
+                    //            match.Score.ScoreString = "N/A";
+                    //        }
+                    //        if (match.Status == "TIMED")
+                    //        { match.Status = $"FIN"; }
+                    //        else if (match.Status == "SCHEDULED")
+                    //        { match.Status = $"NP"; }
+                    //        else
+                    //        { match.Status = "ONG"; }
+                    //    }
+                    //    dataGrid.ItemsSource = result.Matches;
+                    //}
+                    //// JSON parsen
                 }
                 catch (HttpRequestException e)
                 {
@@ -166,5 +223,6 @@ namespace FussballApp
                 }
             }
         }
+
     }
 }
