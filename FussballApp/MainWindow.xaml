@@ -65,5 +65,22 @@
                 <DataGridTextColumn Header="Min."      Binding="{Binding Status}" Width="40"/>
             </DataGrid.Columns>
         </DataGrid>
+        <DataGrid x:Name="FavoritesGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="Column"
+          Grid.Row="1"  MinHeight="50" Margin="10" HorizontalAlignment="Right" SelectionChanged="MatchesGrid_SelectionChanged"
+          Background="gray"
+          BorderBrush="White"
+          BorderThickness="1"
+          
+
+          
+          ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Heim" Width="150" Binding="{Binding HomeTeam.Name}"/>
+                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam.Name}" Width="150"/>
+                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score.ScoreString}" Width="60"/>
+                <DataGridTextColumn Header="Min."      Binding="{Binding Status}" Width="40"/>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>
