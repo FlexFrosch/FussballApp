@@ -6,7 +6,7 @@
 
 ---
 
-## 📄 Kurzbeschreibung
+## 📄 hallo
 
 Programm zur Simulation von digitalen Filtern (FIR oder IIR).  
 Durch Angabe des Filtertyps, der Ordnung und der Koeffizienten wird die Übertragungsfunktion ermittelt und das PN-Diagramm erstellt oder anhand eines PN-Diagramms die Filterkoeffizienten ermittelt.
@@ -49,7 +49,6 @@ for (int i = 0; i < ausgangswerte.Length; i++)
 | 19.04.2022  | Solve Funktion für quadr. Gleichungen        | Nesensohn    | 100%       |
 | 26.04.2022  | IIR Filter 2. Ordnung berechnen              | Pircher      | 80%        |
 
-👉 *Bitte Projektzeitplan für Zwo Football hier eintragen.*
 
 ---
 
@@ -111,12 +110,3 @@ for (int i = 0; i < ausgangswerte.Length; i++)
 
 ---
 
-**Hinweis:**  
-Der Zeitplan ist wöchentlich zu pflegen.  
-Abgabe über Teams mit diesem Dokument und dem Projektverzeichnis.
-
-> Die Benotung erfolgt nicht nur nach Endprodukt, sondern auch nach Arbeitsweise und Termintreue.
-
----
-
-**Viel Erfolg und happy coding!**

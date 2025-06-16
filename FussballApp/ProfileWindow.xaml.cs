@@ -99,8 +99,9 @@ namespace FussballApp
             base.OnKeyDown(e);
         }
 
+        //nach geschaut mit Ki wie es genau ging 
         private void LoadProfiles()
-        {//nach gexchaut mit Ki wie es genau ging 
+        {
             if (!File.Exists(FileName)) return;
 
             try
