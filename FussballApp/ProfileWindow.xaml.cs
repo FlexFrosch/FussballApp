@@ -14,7 +14,6 @@ namespace FussballApp
     {
         private const string FileName = "profiles.json";
 
-        // bindable Collection aller Profile
         public ObservableCollection<Profile> Profiles { get; }
             = new ObservableCollection<Profile>();
 
@@ -27,6 +26,7 @@ namespace FussballApp
 
         private void ProfilEdit_Click(object sender, RoutedEventArgs e)
         {
+            // KI
             var dlg = new ProfileEdit();
             bool? saved = dlg.ShowDialog();
             if (saved == true)

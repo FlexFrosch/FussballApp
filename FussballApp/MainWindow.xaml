@@ -41,7 +41,7 @@
 
         <ContentControl x:Name="ContentRegion" Grid.Row="1" />
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button x:Name="HomeButton" Content="🏠 Home" Width="100" Margin="20" Padding="5" Click="ShowHome" Background="DimGray" />
+                <Button x:Name="HomeButton" Content="🏠 Home" Width="100" Margin="20" Padding="5" Click="ShowHome" Background="DimGray" />
                 <Button x:Name="LeaguesButton" Content="📊 Ligen" Width="100" Margin="20"  Padding="5" Click="ShowLeagues" Background="DimGray" />
                 <Button x:Name="ProfileButton" Content="👤 Profil" Width="100" Margin="20" Padding="5" Click="ShowProfile" Background="DimGray" />
             <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"></Frame>
