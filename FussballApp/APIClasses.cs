@@ -5,6 +5,7 @@ using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace FussballApp
 {
@@ -38,6 +39,13 @@ namespace FussballApp
         public Competition Competition { get; set; }
         public Season Season { get; set; }
         public List<Standing> Standings { get; set; }
+    }
+
+    public class TopScorersRoot
+    {
+        public int Count { get; set; }
+        public Filters Filters { get; set; }
+        public List<Scorer> Scorers { get; set; }
     }
 
     public class Filters
@@ -136,5 +144,27 @@ namespace FussballApp
         public int GoalsFor { get; set; }
         public int GoalsAgainst { get; set; }
         public int GoalDifference { get; set; }
+    }
+    public class Scorer
+    {
+        public Player Player { get; set; }
+        public Team Team { get; set; }
+        public int PlayedMatches { get; set; }
+        public int Goals { get; set; }
+        public int? Assists { get; set; }
+        public int? Penalties { get; set; }
+    }
+    public class Player
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string DateOfBirth { get; set; }
+        public string Nationality { get; set; }
+        public string Section { get; set; }
+        public object Position { get; set; }
+        public int? ShirtNumber { get; set; }
+        public string LastUpdated { get; set; }
     }
 }

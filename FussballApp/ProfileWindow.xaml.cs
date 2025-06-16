@@ -100,7 +100,7 @@ namespace FussballApp
         }
 
         private void LoadProfiles()
-        {
+        {//nach gexchaut mit Ki wie es genau ging 
             if (!File.Exists(FileName)) return;
 
             try
