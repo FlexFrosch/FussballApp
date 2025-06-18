@@ -28,9 +28,9 @@
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center" Margin="8">
-            <Button x:Name="BtnGestern" Content="Gestern" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
-            <Button x:Name="BtnHeute" Content="Heute" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
-            <Button x:Name="BtnMorgen" Content="Morgen" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
+            <Button x:Name="BtnGestern" Content="Gestern" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray" Click="BtnGestern_Click"/>
+            <Button x:Name="BtnHeute" Content="Heute" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray" Click="BtnHeute_Click"/>
+            <Button x:Name="BtnMorgen" Content="Morgen" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray" Click="BtnMorgen_Click"/>
             <Button x:Name="BtnKalender" Content="📅 Kalender" Height="25" Width="100" Margin="4" Foreground="White" BorderBrush="White" Background="DarkSlateGray"/>
         </StackPanel>
 
@@ -57,23 +57,6 @@
 
                   
                   ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}">
-
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Heim" Width="150" Binding="{Binding HomeTeam.Name}"/>
-                <DataGridTextColumn Header="Gast"      Binding="{Binding AwayTeam.Name}" Width="150"/>
-                <DataGridTextColumn Header="Ergebnis"  Binding="{Binding Score.ScoreString}" Width="60"/>
-                <DataGridTextColumn Header="Min."      Binding="{Binding Status}" Width="40"/>
-            </DataGrid.Columns>
-        </DataGrid>
-        <DataGrid x:Name="FavoritesGrid" AutoGenerateColumns="False" CanUserAddRows="False" IsReadOnly="True" HeadersVisibility="Column"
-          Grid.Row="1"  MinHeight="50" Margin="10" HorizontalAlignment="Right" SelectionChanged="MatchesGrid_SelectionChanged"
-          Background="gray"
-          BorderBrush="White"
-          BorderThickness="1"
-          
-
-          
-          ColumnHeaderStyle="{StaticResource DataGridColumnHeaderStyle}">
 
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Heim" Width="150" Binding="{Binding HomeTeam.Name}"/>

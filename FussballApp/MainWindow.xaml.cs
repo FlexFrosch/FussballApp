@@ -22,6 +22,7 @@ namespace FussballApp
             InitializeComponent();
         }
 
+        int datum = 2;
 
       
 
@@ -97,14 +98,32 @@ namespace FussballApp
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            API_Reader.GetGames("a", "a", MatchesGrid);
+            API_Reader.GetGames(datum, MatchesGrid);
         }
 
        
 
         private void ReloadButton_Click(object sender, RoutedEventArgs e)
         {
-            API_Reader.GetGames("a", "a", MatchesGrid);
+            API_Reader.GetGames(datum, MatchesGrid);
+        }
+
+        private void BtnGestern_Click(object sender, RoutedEventArgs e)
+        {
+            datum = 3;
+            API_Reader.GetGames(datum, MatchesGrid);
+        }
+
+        private void BtnHeute_Click(object sender, RoutedEventArgs e)
+        {
+            datum = 2;
+            API_Reader.GetGames(datum, MatchesGrid);
+        }
+
+        private void BtnMorgen_Click(object sender, RoutedEventArgs e)
+        {
+            datum = 1;
+            API_Reader.GetGames(datum, MatchesGrid);
         }
     }
 
